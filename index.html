@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pexels Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Navbar -->
+      <header class="navbar">
+        <img class="nav-logo" src="/assets/logo.png" alt="Logo" />
+        <div class="search nav-search">
+          <input
+            class="nav-search-input"
+            type="text"
+            placeholder="Search for free photos"
+          />
+          <span class="material-symbols-outlined"> search </span>
+        </div>
+        <div class="nav-right">
+          <div class="btn-right-icon nav-explore-text">
+            <p>Explore</p>
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+          </div>
+          <p class="nav-license">License</p>
+          <span class="material-symbols-outlined settings-menu-icon">
+            more_horiz
+          </span>
+          <button class="btn join-btn">Join</button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-left">
+          <h1>
+            The best free stock photos, royalty free images & videos shared by
+            creators.
+          </h1>
+          <div class="search hero-search">
+            <input
+              class="nav-search-input"
+              type="text"
+              placeholder="Search for free photos"
+            />
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="/assets/hero-image.jpg" alt="Hero" />
+          <div class="hero-right-content">
+            <div class="hero-days-left">
+              <span class="material-symbols-outlined"> hourglass </span>
+              <p>9 days left</p>
+            </div>
+            <h2>
+              World Photographer Month 2025: Around The World Photo & Video
+              Challenge
+            </h2>
+            <div class="hero-join">
+              <p>Join</p>
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Gallery -->
+      <section class="gallery-section">
+        <div class="gallery-filter">
+          <h2>Free <span class="search-tag">Stock</span> Photos</h2>
+          <div class="btn-right-icon filter-text">
+            <p>Orientation</p>
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+          </div>
+        </div>
+
+        <div class="image-gallery"></div>
+
+        <!-- Infinite Loader -->
+        <div class="loader" aria-label="Loading"></div>
+      </section>
+
+      <!-- Explore Dropdown -->
+      <div class="explore-dropdown">
+        <div class="explore-menu">
+          <span class="material-symbols-outlined"> language </span>
+          <p>Discover</p>
+        </div>
+        <div class="explore-menu">
+          <span class="material-symbols-outlined"> rocket_launch </span>
+          <p>Leaderboard</p>
+        </div>
+        <div class="explore-menu">
+          <span class="material-symbols-outlined"> trophy </span>
+          <p>Challenge</p>
+        </div>
+        <div class="explore-menu">
+          <span class="material-symbols-outlined"> page_header </span>
+          <p>Blogs</p>
+        </div>
+      </div>
+
+      <!-- Settings Dropdown -->
+      <div class="settings-dropdown">
+        <p class="setting-menu">Login</p>
+        <p class="setting-menu">Image API</p>
+        <p class="setting-menu">Apps and Plugins</p>
+        <p class="setting-menu">Help Center</p>
+        <p class="setting-menu">Report Content</p>
+        <p class="setting-menu">Partnership</p>
+        <p class="setting-menu">Imprint & Terms</p>
+        <div class="horizontal-divider"></div>
+        <div class="settings-social-icons">
+          <img src="/assets/icons/instagram.svg" alt="Instagram" />
+          <img src="/assets/icons/telegram.svg" alt="Telegram" />
+          <img src="/assets/icons/threads.svg" alt="Threads" />
+          <img src="/assets/icons/reddit.svg" alt="Reddit" />
+          <img src="/assets/icons/youtube.svg" alt="YouTube" />
+        </div>
+      </div>
+
+      <!-- Single Image Modal -->
+      <section class="img-click-wrapper" aria-hidden="true">
+        <span
+          class="material-symbols-outlined img-close-btn"
+          role="button"
+          aria-label="Close"
+        >
+          close
+        </span>
+        <div class="single-image">
+          <div class="img-details">
+            <div class="img-creator">
+              <h1 class="creator-image" title="Initials">HP</h1>
+              <div class="creator-name-div">
+                <h3 class="creator-name">Harsh Patankar</h3>
+                <p class="creator-follow" role="button" tabindex="0">Follow</p>
+              </div>
+            </div>
+            <div class="img-buttons">
+              <div class="like-btn">
+                <span class="material-symbols-outlined"> favorite </span>
+                <p>Like <span class="like-number">145</span></p>
+              </div>
+              <div class="download-btn" role="button" tabindex="0">
+                <span class="material-symbols-outlined"> download </span>
+                <p>Free Download</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-holder">
+            <img
+              class="single-image-view"
+              src="/assets/temp-Images/5.jpg"
+              alt="Selected"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
